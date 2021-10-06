@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 <header class="page-header">
@@ -11,7 +12,7 @@
   </a>
   <form class="header-search" action="https://echo.htmlacademy.ru/" method="POST">
     <label class="visually-hidden" for="search">Поиск по сайту</label>
-    <input type="search" name="search-string" id="search" placeholder="Поиск по сайту" required/>
+    <input class="header-search-field" type="search" name="search-string" id="search" placeholder="Поиск по сайту" required/>
   </form>
   <nav class="navigation">
     <ul class="navigation-list">
@@ -29,9 +30,12 @@
         </a>
       </li>
     </ul>
-    <ul>
+    <ul class="navigation-list-bottom">
       <li class="navigation-item">
         <a class="navigation-link" href="#">Каталог товаров</a>
+        <button class="more-catalog-button" type="button">
+          <span class="visually-hidden">Показать категории каталога</span>
+        </button>
       </li>
       <li class="navigation-item">
         <a class="navigation-link" href="#">Гарантия</a>
@@ -62,7 +66,7 @@
     <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
       <span class="catalog-filter-title">Фильтр:</span>
       <fieldset class="catalog-filter-group">
-        <legend class="catalog-filter-title">Стоимость</legend>
+        <legend class="catalog-filter-subtitle">Стоимость</legend>
         <button class="range-toggle toggle-min" type="button">
           <span class="visually-hidden">Изменить минимальную цену.</span>
         </button>
@@ -80,7 +84,7 @@
       </fieldset>
 
       <fieldset class="catalog-filter-group">
-        <legend class="catalog-filter-title">Цвет</legend>
+        <legend class="catalog-filter-subtitle">Цвет</legend>
         <ul class="catalog-filter-list">
           <li class="catalog-filter-item">
             <label class="control">
@@ -121,7 +125,7 @@
       </fieldset>
 
       <fieldset class="catalog-filter-group">
-        <legend class="catalog-filter-title">Bluetooth</legend>
+        <legend class="catalog-filter-subtitle">Bluetooth</legend>
         <ul class="catalog-filter-list">
           <li class="catalog-filter-item">
             <label class="control">
@@ -142,7 +146,7 @@
       <button class="button" type="submit">Показать</button>
     </form>
     <form class="sorting-type">
-      <label class="visually-hidden" for="sorting">Сортировка:</label>
+      <label class="catalog-filter-title" for="sorting">Сортировка:</label>
       <select class="select-control" id="sorting" name="sorting">
         <option value="popular">Сначала популярные</option>
         <option value="cheap">Сначала дешёвые</option>
@@ -151,10 +155,10 @@
       <button class="visually-hidden" type="submit">Отсортировать продукты</button>
     </form>
     <a href="#" class="button button-light">
-      <span class="visually-hidden">Показать список</span>
+      <span class="visually-hidden">Сортировать по убыванию</span>
     </a>
     <a href="#" class="button">
-      <span class="visually-hidden">Показать карточки</span>
+      <span class="visually-hidden">Сортировать по возрастанию</span>
     </a>
 
     <div class="product-card">
@@ -195,7 +199,7 @@
 
     <ul class="pagination">
       <li class="pagination-item">
-        <a class="pagination-link pagination-prev" href="#">Назад</a>
+        <a class="pagination-link-text pagination-prev" href="#">Назад</a>
       </li>
       <li class="pagination-item">
         <a class="pagination-link" href="#">1</a>
@@ -213,7 +217,7 @@
         <a class="pagination-link" href="#">15</a>
       </li>
       <li class="pagination-item">
-        <a class="pagination-link pagination-next" href="#">Вперёд</a>
+        <a class="pagination-link-text pagination-next" href="#">Вперёд</a>
       </li>
     </ul>
   </section>
@@ -262,7 +266,7 @@
   </section>
   <section class="footer-contacts">
     <h2 class="visually-hidden">Контакты</h2>
-    <p>Тел.: <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a></p>
+    <p class="footer-contacts-phone">Тел.: <a href="tel:+78128121212">+7 (812) 812-12-12</a></p>
     <a class="footer-contacts-developer" href="https://htmlacademy.ru/">
       <img src="img/htmlacademy-logo.svg" width="115" height="34" alt="Логотип HTML Academy"/>
     </a>
