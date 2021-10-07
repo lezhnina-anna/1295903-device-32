@@ -170,7 +170,6 @@ body {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  color: #444444;
 }
 
 .contacts-text {
@@ -185,6 +184,9 @@ body {
   color: #444444;
 }
 
+.contacts-title {
+  color: #000000;
+}
 
 .subscription {
   color: #000000;
@@ -196,7 +198,7 @@ body {
 }
 
 .subscription-field {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
@@ -215,6 +217,8 @@ body {
 
 .footer-address-text {
   font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .footer-navigation-link {
@@ -309,6 +313,7 @@ body {
 
 .product-card-title {
   color: #000000;
+  font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.02em;
 }
@@ -321,7 +326,7 @@ body {
 }
 
 .product-card-new-label {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 14px;
   line-height: 16px;
@@ -345,7 +350,7 @@ body {
 }
 
 .pagination-link-text {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   text-align: center;
   letter-spacing: 0.2em;
