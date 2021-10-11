@@ -30,12 +30,29 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .button {
@@ -69,6 +86,43 @@ body {
 .page-header {
   color: #000000;
   background: #FFE17F;
+  padding-left: 60px;
+  padding-right: 59px;
+}
+
+.page-header .logo {
+  width: 145px;
+}
+
+.page-header-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  width: 100%;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-list-bottom {
+  display: flex;
+}
+
+.navigation-list-bottom .navigation-item:first-child {
+    margin-right: auto;
+}
+
+.navigation-list-bottom .navigation-item:last-child {
+    margin-left: 62px;
+}
+
+.header-search {
+  width: 516px;
 }
 
 .header-search-field {
@@ -99,9 +153,29 @@ body {
   text-transform: uppercase;
 }
 
+.product-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-image {
+  width: 560px;
+}
+
+.product-info {
+  width: 560px;
+}
+
 .product-index {
   font-size: 180px;
   line-height: 30px;
+  font-weight: 800;
   color: #FFFFFF;
 }
 
@@ -125,6 +199,18 @@ body {
   color: #444444;
 }
 
+.category-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-item {
+  width: 160px;
+}
+
 .category-item-link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -140,8 +226,33 @@ body {
   background: #F0F0F0;
 }
 
+.advantages .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 280px;
+  border-right: 7px solid;
+}
+
+.advantages-content-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 696px;
+}
+
+.advantages-content-item:nth-child(n+2) {
+  display: none;
+}
+
 .advantages-content-description {
   color: #444444;
+  width: 497px;
 }
 
 .delivery-button {
@@ -155,6 +266,20 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border: none;
+  width: 100%;
+}
+
+.index-columns .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  width: 560px;
+}
+
+.contacts {
+  width: 560px;
 }
 
 .list-item {
@@ -193,8 +318,22 @@ body {
   background: #F0F0F0;
 }
 
+.subscription-top-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription-title {
+  width: 560px;
+}
+
 .subscription-text {
   color: #444444;
+  width: 560px;
+}
+
+.subscription-form {
+  display: flex;
 }
 
 .subscription-field {
@@ -204,10 +343,15 @@ body {
   color: #444444;
   opacity: 0.5;
   background-color: transparent;
+  width: 601px;
+  padding: 0;
+  border: none;
+  border-bottom: 3px solid #000000;;
 }
 
 .subscription-motivator {
   color: #444444;
+  margin-left: auto;
 }
 
 .page-footer {
@@ -215,10 +359,38 @@ body {
   background: #444444;
 }
 
+.page-footer .container {
+  display: flex;
+}
+
+.footer-address {
+  width: 240px;
+  margin-right: 112px;
+}
+
+.footer-contacts {
+  width: 293px;
+  margin-left: auto;
+}
+
 .footer-address-text {
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
+}
+
+.footer-navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.footer-navigation-socials-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
 
 .footer-navigation-link {
@@ -230,6 +402,15 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contacts-developer {
+  margin-left: auto;
 }
 
 .footer-contacts-phone {
