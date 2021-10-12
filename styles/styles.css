@@ -453,9 +453,42 @@ body {
   text-decoration: none;
 }
 
+.catalog-products-top .container {
+  display: flex;
+}
+
+.catalog-products-top-filter {
+  width: 200px;
+  padding-right: 70px;
+  background-color: #DCDCDC;
+}
+
+.catalog-products-top-sorting {
+  padding-left: 70px;
+  width: 760px;
+}
+
+.catalog-products-main .container {
+  display: flex;
+}
+
+.catalog-left-column {
+  width: 200px;
+  padding-right: 70px;
+  background-color: #E5E5E5;
+}
+
+.catalog-right-column {
+  padding-left: 70px;
+  width: 760px;
+}
+
 .catalog-filter {
   background: #E5E5E5;
   color: #000000;
+  width: 200px;
+  margin-left: auto;
+  margin-right: 70px;
 }
 
 .catalog-filter-title {
