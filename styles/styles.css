@@ -999,7 +999,8 @@ body {
   color: #FFC700;
 }
 
-.footer-navigation-link:hover::after {
+.footer-navigation-link:hover::after,
+.footer-navigation-link:active::after{
   content: "";
   position: absolute;
   left: 13px;
@@ -1007,6 +1008,11 @@ body {
   height: 2px;
   background-color: #FFC700;
   bottom: 3px;
+}
+
+.footer-navigation-link:active {
+  color: #FFC700;
+  opacity: 0.3;
 }
 
 .footer-contacts {
