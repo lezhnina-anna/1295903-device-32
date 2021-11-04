@@ -1507,6 +1507,11 @@ body {
   outline: 5px solid #AF4FFF;
 }
 
+.pagination-link-text:active {
+  outline: 5px solid #DCDCDC;
+  color: rgba(0, 0, 0, .3);
+}
+
 .pagination-item {
   height: 100%;
   display: flex;
@@ -1554,6 +1559,6 @@ body {
 }
 
 .pagination-link:active {
-  outline: none;
+  border: none;
 }
 
