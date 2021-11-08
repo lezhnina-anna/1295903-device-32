@@ -29,6 +29,36 @@
           <a class="navigation-link" href="#">
             Корзина
           </a>
+          <div class="popover popover-cart">
+            <div class="popover-content">
+              <h2 class="popover-title visually-hidden">Корзина</h2>
+              <ul class="popover-cart-items-list">
+                <li class="popover-cart-item">
+                  <a class="popover-cart-item-link" href="#">
+                    <img class="popover-cart-item-image" src="img/cart/product-1-small.jpg" alt=""/>
+                    <span class="popover-cart-item-title">Любительская селфи-палка</span>
+                  </a>
+                  <button class="popover-cart-item-remove">
+                    <span class="visually-hidden">Удалить товар из корзины</span>
+                  </button>
+                </li>
+                <li class="popover-cart-item">
+                  <a class="popover-cart-item-link" href="#">
+                    <img class="popover-cart-item-image" src="img/cart/product-2-small.jpg" alt=""/>
+                    <span class="popover-cart-item-title">Профессиональная селфи-палка</span>
+                  </a>
+                  <button class="popover-cart-item-remove">
+                    <span class="visually-hidden">Удалить товар из корзины</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="popover-cart-total">
+                <div class="popover-cart-total-item">Товаров: 2</div>
+                <div class="popover-cart-total-item">Сумма: 2000 ₽</div>
+              </div>
+              <a class="popover-cart-button" href="#">Открыть корзину</a>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
@@ -40,12 +70,34 @@
               <span class="navigation-text">Каталог товаров</span>
               <span class="visually-hidden">Показать категории каталога</span>
               <span class="more-catalog-button-icon-container">
-                 <svg class="more-catalog-button-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                 <svg class="more-catalog-buttonё-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 16 16" aria-hidden="true" focusable="false">
                 <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z"/>
               </svg>
               </span>
             </button>
+            <div class="popover popover-catalog">
+              <div class="popover-content">
+                <ul class="popover-catalog-list">
+                  <li class="popover-catalog-list-item"><a class="popover-catalog-list-link" href="#">Виртуальная
+                    реальность</a></li>
+                  <li class="popover-catalog-list-item"><a class="popover-catalog-list-link" href="#">Моноподы для
+                    cелфи</a></li>
+                  <li class="popover-catalog-list-item"><a class="popover-catalog-list-link" href="#">Экшн-камеры</a>
+                  </li>
+                </ul>
+                <ul class="popover-catalog-list">
+                  <li class="popover-catalog-list-item"><a class="popover-catalog-list-link"
+                                                           href="#">Фитнес-браслеты</a></li>
+                  <li class="popover-catalog-list-item"><a class="popover-catalog-list-link" href="#">Умные часы</a>
+                  </li>
+                </ul>
+                <ul class="popover-catalog-list">
+                  <li class="popover-catalog-list-item"><a class="popover-catalog-list-link" href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
@@ -67,7 +119,7 @@
     <div class="container">
       <h2 class="visually-hidden">Рекомендуемые товары</h2>
       <ol class="product-list">
-        <li class="product-item">
+        <li class="product-item product-item-active">
           <img class="product-image" src="img/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер"/>
           <div class="product-info">
             <span class="product-index">
@@ -89,13 +141,59 @@
             </table>
           </div>
         </li>
+        <li class="product-item">
+          <img class="product-image" src="img/slider/slider-2.png" width="560" height="560" alt="Квадрокоптер"/>
+          <div class="product-info">
+            <span class="product-index">
+              <span class="visually-hidden">Номер слайда:</span>02
+            </span>
+            <h3 class="main-title product-title">Худеем<br/>правильно!</h3>
+            <p class="product-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия
+              и соблюдать диету.</p>
+            <a class="button button-more" href="#">Подробнее</a>
+            <table class="product-specifications">
+              <tr class="product-specifications-value">
+                <td>48 часов</td>
+              </tr>
+              <tr class="product-specifications-title">
+                <td>Без подзарядки</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li class="product-item">
+          <img class="product-image" src="img/slider/slider-3.png" width="560" height="560" alt="Квадрокоптер"/>
+          <div class="product-info">
+            <span class="product-index">
+              <span class="visually-hidden">Номер слайда:</span>03
+            </span>
+            <h3 class="main-title product-title">Делай селфи,<br/>как Бен Стиллер! </h3>
+            <p class="product-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
+              Карл!) метров длиной и весом всего 5 кг.</p>
+            <a class="button button-more" href="#">Подробнее</a>
+            <table class="product-specifications">
+              <tr class="product-specifications-value">
+                <td>8,5 м</td>
+                <td>5 кг</td>
+                <td>Карбон</td>
+              </tr>
+              <tr class="product-specifications-title">
+                <td>Длина палки</td>
+                <td>Вес палки</td>
+                <td>Материал</td>
+              </tr>
+            </table>
+          </div>
+        </li>
       </ol>
-      <button class="slider-button slider-prev" type="button">
-        <span class="visually-hidden">Предыдущий товар</span>
-      </button>
-      <button class="slider-button slider-next" type="button">
-        <span class="visually-hidden">Следующий товар</span>
-      </button>
+      <div class="slider-buttons">
+        <button class="slider-button slider-prev" type="button">
+          <span class="visually-hidden">Предыдущий товар</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="visually-hidden">Следующий товар</span>
+        </button>
+      </div>
       <ol class="slider-pagination">
         <li class="slider-pagination-item">
           <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -242,21 +340,21 @@
         </li>
       </ul>
       <ul class="advantages-content-list">
-        <li class="advantages-content-item item-delivery">
+        <li class="advantages-content-item item-delivery advantages-content-item-active">
           <h3 class="main-title advantages-content-title">Доставка</h3>
           <p class="advantages-content-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
             совершенно бесплатно! Ведь мы неплохо
             заработаем, поднимая его на ваш этаж.
           </p>
         </li>
-        <li class="advantages-content-item">
+        <li class="advantages-content-item item-guarantee">
           <h3 class="main-title advantages-content-title">Гарантия</h3>
           <p class="advantages-content-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
             переживайте, мы выдадим вам
             новый. Товар, не дом, конечно же.
           </p>
         </li>
-        <li class="advantages-content-item">
+        <li class="advantages-content-item item-credit">
           <h3 class="main-title advantages-content-title">Кредит</h3>
           <p class="advantages-content-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут
             для вас наиболее выгодные условия
@@ -429,5 +527,55 @@
     </section>
   </div>
 </footer>
+<div class="modal-container modal-container-close">
+  <div class="modal modal-delivery">
+    <button class="modal-close-button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <section class="modal-content">
+      <h2 class="modal-title">Доставка под заказ</h2>
+      <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="field-group delivery-form-name">
+          <label class="form-label" for="delivery-form-name">Ваше имя:</label>
+          <input class="delivery-form-field field" type="text" id="delivery-form-name" name="delivery-form-name"
+                 placeholder="Имя Фамилия">
+          <span class="form-caption caption-error">Пожалуйста, представьтесь</span>
+        </p>
+        <p class="field-group delivery-form-email">
+          <label class="form-label" for="delivery-form-email">Ваш e-mail:</label>
+          <input class="delivery-form-field field" type="email" id="delivery-form-email" name="delivery-form-email"
+                 placeholder="krasotka92@mail.ru">
+          <span class="form-caption">Забавный у вас адрес</span>
+        </p>
+        <p class="field-group delivery-form-product">
+          <label class="form-label" for="delivery-form-product">Что нужно привезти:</label>
+          <input class="delivery-form-field field" type="text" id="delivery-form-product" name="delivery-form-product"
+                 placeholder="В свободной форме">
+        </p>
+        <p class="field-group delivery-form-count">
+          <label class="form-label form-label-icon" for="delivery-form-count">
+            Количество:
+            <button class="button-info" type="button">
+              <span class="visually-hidden">Подробнее</span>
+            </button>
+            <span class="popover popover-delivery">
+              Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+            </span>
+          </label>
+          <button class="button-count button-count-minus" type="button"><span
+            class="visually-hidden">Уменьшить количество на единицу.</span></button>
+          <input class="delivery-form-field field" type="number" id="delivery-form-count" name="delivery-form-count"
+                 value="1" min="1">
+          <button class="button-count button-count-plus" type="button">
+            <span class="visually-hidden">Увеличить количество на единицу.</span>
+          </button>
+        </p>
+        <button class="button delivery-form-button" type="submit">
+          <span class="button-text">Отправить</span>
+        </button>
+      </form>
+    </section>
+  </div>
+</div>
 </body>
 </html>
