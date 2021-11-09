@@ -780,6 +780,13 @@ body {
   border-radius: 20px;
 }
 
+.header-search-field::-webkit-search-decoration,
+.header-search-field::-webkit-search-cancel-button,
+.header-search-field::-webkit-search-results-button,
+.header-search-field::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
 .header-search-field::-webkit-input-placeholder,
 .header-search-field:-ms-input-placeholder,
 .header-search-field::-ms-input-placeholder,
