@@ -8,14 +8,17 @@
 <body>
 <div class="container">
   <header class="page-header">
-    <a class="logo" href="/">
+    <a class="logo" href="index.html">
       <img src="img/header-logo.svg" alt="Логотип компании Девайс" width="145" height="36">
     </a>
     <div class="page-header-row page-header-row-top">
       <form class="header-search" action="https://echo.htmlacademy.ru/" method="POST">
-        <label class="visually-hidden" for="search">Поиск по сайту</label>
-        <input class="header-search-field" type="search" name="search-string" id="search" placeholder="Поиск по сайту"
-               required/>
+        <label class="header-search-label" for="search">
+          <span class="visually-hidden">Поиск по сайту</span>
+          <input class="header-search-field" type="search" name="search-string" id="search" placeholder="Поиск по сайту"
+                 required/>
+          <button class="header-search-button">Найти</button>
+        </label>
       </form>
       <ul class="navigation-list navigation-list-top">
         <li class="navigation-item item-login">
@@ -537,7 +540,7 @@
       <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="field-group delivery-form-name">
           <label class="form-label" for="delivery-form-name">Ваше имя:</label>
-          <input class="delivery-form-field field" type="text" id="delivery-form-name" name="delivery-form-name"
+          <input class="delivery-form-field field error-field" type="text" id="delivery-form-name" name="delivery-form-name"
                  placeholder="Имя Фамилия" required>
           <span class="form-caption caption-error">Пожалуйста, представьтесь</span>
         </p>
